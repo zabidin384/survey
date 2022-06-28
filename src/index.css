@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap");
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Components */
+@layer components {
+	.btn {
+		@apply py-2.5 px-5 my-5 text-sm font-bold cursor-pointer tracking-wider rounded-md bg-blue-600 text-white hover:opacity-75 disabled:bg-slate-400;
+	}
+	.radio {
+		@apply w-fit m-0 p-0;
+	}
+	.card {
+		@apply p-5 rounded-lg shadow-lg bg-white;
+	}
+	.h1 {
+		@apply font-bold text-[28px] my-10 text-blue-900;
+	}
+	.h2 {
+		@apply font-bold text-[24px] my-7 text-blue-900;
+	}
+	.p {
+		@apply font-medium text-[12px];
+	}
+}
+
+/* Global */
+body {
+	margin: 0;
+	font-family: "Enriqueta", serif;
+}
+input {
+	padding: 7.5px;
+	margin: 20px 0;
+	border: 1px solid black;
+}
+[type="radio"]:hover {
+	cursor: pointer;
+}
+
+/* Step 1 */
+.step1 label {
+	margin: 10px 0;
+}
+
+/* Step 2 */
+.step2 label {
+	margin-bottom: 10px;
+}
+.fa-face-smile {
+	font-size: 28px;
+	color: white;
+}
+.fa-face-smile:hover {
+	color: orange;
+	cursor: pointer;
+}
+.recommendation span {
+	border: 1px solid blue;
+	padding: 5px 36px;
+	display: flex;
+	align-items: center;
+}
+.recommendation span:hover {
+	background-color: darkslategrey;
+}
+
+/* Step 3 */
+.step3 label {
+	margin: 30px 0 10px 0;
+}
